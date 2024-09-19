@@ -281,13 +281,12 @@ class _EditProfileState extends State<EditProfile> {
     final docUser = FirebaseFirestore.instance.collection('users').doc(id);
     final currentUser = FirebaseAuth.instance.currentUser;
     currentUser?.delete();
-    docUser
-        .delete()
-        .then((value) => ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            duration: const Duration(seconds: 1),
+    docUser.delete().then(
+        (value) => ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            duration: Duration(seconds: 1),
             content: Wrap(
               crossAxisAlignment: WrapCrossAlignment.center,
-              children: const [
+              children: [
                 Text(
                   "Account Deleted Successfully",
                 ),

@@ -194,11 +194,11 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
     }
     if (snapshot.hasData) {
       if (snapshot.requireData.size == 0) {
-        return Center(
+        return const Center(
           child: Column(
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              const SizedBox(
+              SizedBox(
                 height: 20,
               ),
               Row(
@@ -206,8 +206,8 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  const Text("You don't have a conversation yet; say hello! "),
-                  const Icon(
+                  Text("You don't have a conversation yet; say hello! "),
+                  Icon(
                     Icons.waving_hand,
                     color: Colors.blue,
                     size: 20.0,

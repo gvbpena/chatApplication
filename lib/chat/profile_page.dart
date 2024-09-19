@@ -257,16 +257,16 @@ class _ProfileState extends State<Profile> {
               // Navigator.pop(context);
               FirebaseAuth.instance.signOut();
               Navigator.pop(context);
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                  duration: const Duration(seconds: 2),
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  duration: Duration(seconds: 2),
                   content: Wrap(
                     crossAxisAlignment: WrapCrossAlignment.center,
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      const Text(
+                      Text(
                         "Logged out successfully",
                       ),
-                      const Icon(
+                      Icon(
                         Icons.check,
                         color: Colors.green,
                       )

@@ -4,7 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'chat/bottom_nav.dart';
 import 'firebase_options.dart';
-import 'dart:io';
+// import 'dart:io';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

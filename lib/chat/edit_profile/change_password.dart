@@ -199,16 +199,16 @@ class _ChangePasswordState extends State<ChangePassword> {
   }
 
   changeSuccess() {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        duration: const Duration(seconds: 2),
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        duration: Duration(seconds: 2),
         content: Wrap(
           crossAxisAlignment: WrapCrossAlignment.center,
           // ignore: prefer_const_literals_to_create_immutables
           children: [
-            const Text(
+            Text(
               "password change successfully",
             ),
-            const Icon(
+            Icon(
               Icons.check,
               color: Colors.green,
             )

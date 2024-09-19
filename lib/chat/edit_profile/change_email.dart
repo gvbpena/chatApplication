@@ -101,16 +101,16 @@ class _ChangeEmailState extends State<ChangeEmail> {
 
   checkValid() {
     if (!emailcontroller.text.contains('@')) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          duration: const Duration(seconds: 2),
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          duration: Duration(seconds: 2),
           content: Wrap(
             crossAxisAlignment: WrapCrossAlignment.center,
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              const Text(
+              Text(
                 "Invalid Email",
               ),
-              const Icon(
+              Icon(
                 Icons.check,
                 color: Colors.green,
               )
@@ -139,16 +139,16 @@ class _ChangeEmailState extends State<ChangeEmail> {
   }
 
   changeSuccess() {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        duration: const Duration(seconds: 2),
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        duration: Duration(seconds: 2),
         content: Wrap(
           crossAxisAlignment: WrapCrossAlignment.center,
           // ignore: prefer_const_literals_to_create_immutables
           children: [
-            const Text(
+            Text(
               "Email change successfully please login again",
             ),
-            const Icon(
+            Icon(
               Icons.check,
               color: Colors.green,
             )
